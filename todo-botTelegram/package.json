@@ -1,0 +1,34 @@
+{
+    "name": "todo-bottelegram",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Favour2003/todo-botTelegram.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Favour2003/todo-botTelegram/issues"
+    },
+    "homepage": "https://github.com/Favour2003/todo-botTelegram#readme",
+    "dependencies": {
+        "@telegraf/session": "^1.0.1",
+        "colors": "^1.4.0",
+        "commander": "^9.2.0",
+        "dotenv": "^16.0.0",
+        "ejs": "^3.1.8",
+        "express": "^4.18.1",
+        "mysql": "^2.18.1",
+        "node-mysql": "^0.4.2",
+        "nodemon": "^2.0.16",
+        "prettytable": "^0.3.1",
+        "telegraf": "^3.38.0",
+        "telegraf-calendar-telegram": "^1.5.9"
+    }
+}

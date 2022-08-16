@@ -1,0 +1,32 @@
+<head>
+    <link rel="stylesheet" href="loginStyle.css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <div class="loginPage">
+        <meta charset="utf-8">
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <script src="jquery.js"></script>
+        <header>
+            <h1>TODO Login</h1>
+        </header>
+        <form role="form" action="/login" method="POST">
+            <input placeholder="Username" type="text" name="uname"></input>
+            <input placeholder="Password" type="password" name="pass"></input>
+            <section class="links">
+                <button class="button"><span>LOGIN</span></button>
+                <br>
+                <p class="message">Not registered? <a href="/signup">Create an account</a></p>
+                <br>
+                <p class="message">
+                    <% if (locals.errorMessage) { %>
+
+                        <%= errorMessage %>
+
+                            <% } %>
+                </p>
+            </section>
+        </form>
+    </div>
+</body>

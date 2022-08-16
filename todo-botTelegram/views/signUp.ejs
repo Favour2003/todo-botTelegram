@@ -1,0 +1,31 @@
+<head>
+    <link rel="stylesheet" href="loginStyle.css">
+</head>
+
+<body>
+    <div class="loginPage">
+        <meta charset="utf-8">
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <script src="jquery.js"></script>
+        <header>
+            <h1>TODO SignUp</h1>
+        </header>
+        <form role="form" action="/signup" method="POST">
+            <input placeholder="Username" type="text" name="uname"></input>
+            <input placeholder="Password" type="password" name="pass"></input>
+            <section class="links">
+                <button class="button"><span>SIGN UP</span></button>
+                <br>
+                <p class="message">Already have an account? <a href="/">Login</a></p>
+                <br>
+                <p class="message">
+                    <% if (locals.errorMessage) { %>
+
+                        <%= errorMessage %>
+
+                            <% } %>
+                </p>
+            </section>
+        </form>
+    </div>
+</body>

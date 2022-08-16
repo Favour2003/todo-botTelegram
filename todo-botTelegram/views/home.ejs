@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="homeStyle.css">
+</head>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>I tuoi todo</title>
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+</head>
+
+<body>
+    <div class="table-title">
+        <h3>ToDo</h3>
+    </div>
+    <table class="table-fill">
+        <thead>
+            <tr>
+                <th class="text-left">To-Do</th>
+                <th class="text-left">Stato</th>
+                <th class="text-left">Scadenza</th>
+            </tr>
+        </thead>
+        <tbody class="table-hover">
+            <% todo.forEach(function(todo) { %>
+                <tr>
+                    <td>
+                        <%= todo.todo %>
+                    </td>
+                    <td>
+                        <%= todo.stato %>
+                    </td>
+                    <td>
+                        <%= todo.scadenza %>
+                    </td>
+                </tr>
+                <% }); %>
+        </tbody>
+    </table>
+    <br>
+    <form action="/logout" method="POST">
+        <button class="button"><span>LOGOUT</span></button>
+    </form>
+
+
+</body>
+
+</html>
